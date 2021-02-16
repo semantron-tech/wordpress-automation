@@ -68,6 +68,13 @@
         dest: "/var/www/html/{{ wp_domain }}/wp-config.php"
         owner: apache
         group: apache
+    
+    - name: "Wordpress-ha : Adding hostname.php"
+      copy:
+        src: ./hostname.php
+        dest: "/var/www/html/{{ wp_domain }}/hostname.php"
+        owner: apache
+        group: apache
 
     - name: "Wordpress-ha : Restarting/Enabling httpd"
       service:
