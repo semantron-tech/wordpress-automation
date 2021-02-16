@@ -81,7 +81,11 @@
         name: httpd
         state: restarted
         enabled: true
-
+    
+    - name: "Wordpress-ha : removing .git directory"
+      file:
+        path: "/var/www/html/{{ wp_domain }}/.git"
+        state: absent
 
 
 
