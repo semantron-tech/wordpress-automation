@@ -5,10 +5,10 @@
   vars:
     db_user: "wordpress"
     db_password: "wordpress"
-    db_database: "wordpress"
+    db_database: "Wordpress"
     db_host: "db-read.delphin.host"
     wp_domain: "www.delphin.host"
-    wp_repo: "https://github.com/FujiClado/wordpress.git"
+    wp_repo: "https://github.com/semantron-tech/wordpress"
 
   tasks:
 
